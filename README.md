@@ -77,12 +77,6 @@ Similarly, for fake data:
 
 The Generator’s goal is to increase \( D(G(z)) \), making the Discriminator more likely to classify generated samples as real.
 
-### Why Experimentation is Important
-
-Experimentation is critical because:
-
-- **Hyperparameter Tuning**: GANs are sensitive to hyperparameters like learning rates and network architectures. Experimentation helps in finding optimal settings.
-- **Training Stability**: GANs can be unstable, so different approaches and techniques may be needed to stabilize training and improve results.
 
 ## Types of GANs
 
@@ -94,4 +88,7 @@ Experimentation is critical because:
 6. **CycleGAN**: Performs image-to-image translation without paired examples.
 7. **StyleGAN**: Focuses on generating high-quality images with controllable styles and features.
 
-This README provides a basic understanding of GANs, their mathematical formulation, and different types of GANs.
+Explored each type of GAN with in Pytorch.
+
+**References**
+Ian Goodfellow, et al. Generative Adversarial Networks. NIPS 2014 
