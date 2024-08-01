@@ -22,9 +22,7 @@ The **minimax** formula captures this adversarial process:
 
 - **Discriminator Loss**: Measures how well the Discriminator can distinguish between real and fake data. We want the Discriminator to maximize this value.
 
-  \[
-  \text{Loss}_D = - \left[ \mathbb{E}_{x \sim p_{\text{data}}(x)}[\log D(x)] + \mathbb{E}_{z \sim p_z(z)}[\log (1 - D(G(z)))] \right]
-  \]
+  LossD​=−[Ex∼pdata​(x)​[logD(x)]+Ez∼pz​(z)​[log(1−D(G(z)))]]
 
   Where:
   - \( \mathbb{E}_{x \sim p_{\text{data}}(x)} \) is the expectation over real data \(x\).
