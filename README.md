@@ -25,16 +25,14 @@ The **minimax** formula captures this adversarial process:
   LossD​=−[Ex∼pdata​(x)​[logD(x)]+Ez∼pz​(z)​[log(1−D(G(z)))]]
 
   Where:
-  - \( \mathbb{E}_{x \sim p_{\text{data}}(x)} \) is the expectation over real data \(x\).
-  - \( \mathbb{E}_{z \sim p_z(z)} \) is the expectation over noise \(z\).
-  - \( D(x) \) is the probability that the Discriminator classifies \(x\) as real.
-  - \( G(z) \) is the data generated from noise \(z\).
+  - Ex∼pdata​(x) is the expectation over real data \(x\).
+  - Ez∼pz​(z) is the expectation over noise \(z\).
+  - D(x) is the probability that the Discriminator classifies \(x\) as real.
+  - G(z) is the data generated from noise \(z\).
 
 - **Generator Loss**: Measures how well the Generator is at producing data that the Discriminator thinks is real. The Generator wants to minimize this value, effectively maximizing \( D(G(z)) \).
 
-  \[
-  \text{Loss}_G = - \mathbb{E}_{z \sim p_z(z)}[\log D(G(z))]
-  \]
+  LossG​=−Ez∼pz​(z)​[logD(G(z))]
 
   Where:
   - The Generator aims to maximize \( D(G(z)) \), making the Discriminator more likely to classify generated samples as real.
