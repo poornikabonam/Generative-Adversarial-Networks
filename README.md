@@ -91,4 +91,5 @@ The Generator’s goal is to increase \( D(G(z)) \), making the Discriminator mo
 Explored each type of GAN with in Pytorch.
 
 **References**
+
 Ian Goodfellow, et al. Generative Adversarial Networks. NIPS 2014 
